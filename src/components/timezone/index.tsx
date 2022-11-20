@@ -14,9 +14,6 @@ const Timezone = () => {
         // get timezone offset in minutes and invert it
         const tzOffset = -(d.getTimezoneOffset())
 
-        // add or subtract to get offset where it maybe 5 o'clock
-        const tzAhead = ((17 - currentHour) * 60) + tzOffset
-        const tzBehind = ((17 + currentHour) * 60) + tzOffset
         // add or subtract to get offset where it may be 5 o'clock
         const tzAhead = ((17 - currentHour) * 60) + tzOffset // works for after 5pm
         const tzBehind = ((17 - currentHour) * 60) - tzOffset + 120 // TODO: check this
