@@ -27,7 +27,7 @@ const Timezone = () => {
             tz.currentTimeOffsetInMinutes === tzBehind) &&
             tz.name !== currentTz
         )
-        if (!matchingTimezones.length && currentHour !== 17) {
+        if (!matchingTimezones?.length && currentHour !== 17) {
             setMessage("It's not five o'clock anywhere 😢")
         } else {
             const randomTz = matchingTimezones[Math.floor(Math.random() * matchingTimezones.length)]
