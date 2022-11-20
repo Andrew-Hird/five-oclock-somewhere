@@ -246,6 +246,11 @@
     "@typescript-eslint/types" "5.43.0"
     eslint-visitor-keys "^3.3.0"
 
+"@vvo/tzdb@6.76.0":
+  version "6.76.0"
+  resolved "https://registry.yarnpkg.com/@vvo/tzdb/-/tzdb-6.76.0.tgz#752ed593619c7118333025f22f82836cc876f583"
+  integrity sha512-hDVkAaqDA5ti5izUiPFk7tYWu12D3MyM7BgCkJb++KSUpJbhMiEI+um2PhmWvMhXt5Fwz0OAIGpV5Xtfv63HVw==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
