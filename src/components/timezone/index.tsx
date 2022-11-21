@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getTimeZones } from "@vvo/tzdb"
+import CheersGif from '../CheersGif';
 
 const Timezone = () => {
     const [message, setMessage] = useState<string>();
@@ -44,6 +45,7 @@ const Timezone = () => {
         <div className="flex flex-col h-screen items-center justify-center text-center">
             <h1 className="text-5xl">🍻 It's five o'clock somewhere!! 🍻</h1>
             <p className="mt-12 text-2xl whitespace-pre-line">{message}</p>
+            <CheersGif />
         </div>
     )
 }
