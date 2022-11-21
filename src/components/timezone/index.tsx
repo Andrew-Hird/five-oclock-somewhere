@@ -31,10 +31,11 @@ const Timezone = () => {
             setMessage("It's not five o'clock anywhere 😢")
         } else {
             const randomTz = matchingTimezones[Math.floor(Math.random() * matchingTimezones.length)]
+            const city = randomTz.mainCities[Math.floor(Math.random() * randomTz.mainCities.length)]
             if (currentHour === 17) {
-                setMessage(`It's five o-clock where you are 😏,\nand also in ${randomTz.countryName}!`)
+                setMessage(`It's five o-clock where you are 😏,\nand also in ${city}, ${randomTz.countryName}!`)
             } else {
-                setMessage(`It's five o-clock in ${randomTz.countryName}!`)
+                setMessage(`It's five o-clock in ${city}, ${randomTz.countryName}!`)
             }
         }
     }, [])
