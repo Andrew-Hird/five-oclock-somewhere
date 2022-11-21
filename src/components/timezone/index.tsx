@@ -36,15 +36,15 @@ const Timezone = () => {
             if (currentHour === 17) {
                 setMessage(`It's five o-clock where you are 😏,\nand also in ${city}, ${randomTz.countryName}!`)
             } else {
-                setMessage(`It's five o-clock in ${city}, ${randomTz.countryName}!`)
+                setMessage(`It's five o-clock in \n${city}, ${randomTz.countryName}!`)
             }
         }
     }, [])
 
     return (
         <div className="flex flex-col h-screen items-center justify-center text-center">
-            <h1 className="text-5xl">🍻 It's five o'clock somewhere!! 🍻</h1>
-            <p className="mt-12 text-2xl whitespace-pre-line">{message}</p>
+            <h1 className="text-5xl">🍻 It's five o'clock<br />somewhere!! 🍻</h1>
+            <p className="mt-12 px-2 text-2xl whitespace-pre-line">{message}</p>
             <CheersGif />
         </div>
     )
